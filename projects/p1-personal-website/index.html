@@ -1,3 +1,117 @@
-<!-- We have purposely given you an empty file. We want you to get some practice with creating all the tags from the ground up.
- -->
+<!DOCTYPE html>
+<html>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+
+    <style>
+        header {
+            background: url(HeaderBackground.jpg);
+            background-size: cover;
+            color: white;
+            padding-bottom: 75px;
+            text-align: center;
+        }
+
+        #profilePic {
+            text-align: center;
+            margin-top: 50px;
+            border: 5px solid white;
+            border-radius: 50px;
+            background-color: white;
+            padding: 5px 5px 5px 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            color: white
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        .navi {
+            margin: 0;
+            padding: 15px 0 15px 0;
+            background: peru;
+        }
+
+        li {
+            display: inline;
+            padding: 0px 0px 0px 0px;
+        }
+
+        a {
+            color: peru;
+            text-decoration: none;
+            background-color: white;
+            padding: 10px 200px 10px 200px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+
+        #stats {
+            font-size: 30px;
+        }
+
+        .statsbullet {
+            padding: 10px 50px 10px 50px
+        }
+
+        article {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        @media (max-width: 500px) {
+            .heading {
+                font-size: 24px;
+            }
+
+            header {
+                background: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bgimg">
+        <div>
+            <img id="profilePic" src="LinkedInProfilePic.jpg" width="200px" height="200px">
+            <h1>Christopher Nguyen</h1>
+        </div>
+    </header>
+
+    <ul class="navi">
+        <li>
+            <a href="hobbies.html">Hobbies</a>
+        </li>
+        <li>
+            <a href="music.html">Music</a>
+        </li>
+        <li>
+            <a href="goalsFor389K.html">Goals</a>
+        </li>
+    </ul>
+    <article>
+
+        <h2><i>My Story</i></h2>
+        <p>I am a University of Maryland, College Park student. I am pursuing my Bachelors in Computer Science, with a
+            specialization in cyber security, as well as a minor in Mathematics. I am apart of the University Honors
+            program at UMD, allowing me to attend several seminars on subjects concerning contemporary issues and
+            challenges. I have participated in the Do Good Challenge at the University of Maryland, coordinating a team
+            in prototyping a socially impactful venture and presenting a proposal for it. </p>
+    </article>
+    <ul id="stats">
+        <li class="statsbullet"><i> Age: 21 </i></li>
+        <li class="statsbullet"><i> Gender: Male </i></li>
+        <li class="statsbullet"><i> Ethnicity: Vietnamese </i></li>
+    </ul>
+
+
+</body>
+
+</html>

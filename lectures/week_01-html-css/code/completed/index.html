@@ -1,60 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-        <style>
-            
-        .heading {
-            color: red;
-        }
-        #pearagraph {
-            font-size: 24px;
-            color: green;
-        }
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <title>Tony Truong</title>
+
+    <style>
         header {
-            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3bH0l5Xnx_errss0YGSUtCoInBM9NO4lzzSxNty88HWUb1F9k);
-            background-size: cover;
             text-align: center;
+            background: url("background.jpg");
+            background-size: cover;
+            color: white;
         }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        ul {
+            padding: 5px;
+            background: black
+        }
+
         li {
             display: inline;
             padding: 0px 10px 0px 10px;
         }
 
-        @media (max-width: 500px){
-            .heading {
-                font-size: 24px;
+        a {
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            padding: 5px 100px 5px 100px;
+            border-radius: 5px;
+        }
+
+        img {
+            margin: 40px 0 0 0;
+            border: 3px solid white;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        body {
+            background: black;
+            width: auto;
+            height: auto;
+        }
+
+        .aboutme {
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+
+        @media (max-width: 1000px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            li {
+                display: block;
+                padding: 7px 0 7px 0;
+            }
+
+            a {
+                padding: 5px 40% 5px 40%;
+            }
+
+            header {
+                background-image: none;
             }
         }
-        
-        </style>
-    </head>
-    <body>
-        <header>
-            First class woohoo
-        </header>
-        <h1 class="heading">Biggest heading</h1>
-        <h3 class="heading">Medium heading</h3>
-        <h6 class="heading">baby heading</h6>
-        <p id="pearagraph"><i>This is a paragraph.</i></p>
-        <p><b>Bold paragraph</b></p>
-        <a href="http://www.google.com">Google</a>
-        <ol>
-            <li>
-                One
-            </li>
-            <li>
-                Two
-            </li>
-            <li>
-                Three
-            </li>
-        </ol>
+    </style>
+</head>
 
-        <hr>
-        <form>
-            <input type="text" name="firstname">
-            <button type="submit" value="button"> Submit </button>
-        </form>
-    </body>
+<body>
+    <header>
+        <div>
+            <img src="me.jpg" width="150px">
+        </div>
+
+        <h1>Tony Truong</h1>
+
+        <ul>
+            <li>
+                <a href="index.html">About me</a>
+            </li>
+            <li>
+                <a href="hobbies.html">Hobbies</a>
+            </li>
+            <li>
+                <a href="pets.html">My pets</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <h2 class="aboutme">
+        <u>About me</u>
+    </h2>
+
+    <table class="aboutme">
+
+        <tr>
+            <td>Age:</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>School:</td>
+            <td>University of Maryland</td>
+        </tr>
+
+        <tr>
+            <td>Year:</td>
+            <td>3rd year</td>
+        </tr>
+
+        <tr>
+            <td>Major:</td>
+            <td>Computer Science</td>
+        </tr>
+
+        <tr>
+            <td>Minor:</td>
+            <td>Technology Entrepreneurship</td>
+        </tr>
+    </table>
+
+</body>
+
 </html>

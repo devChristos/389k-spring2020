@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <style>
+        header {
+            background: url(Meme1.jpg);
+            background-size: cover;
+            color: white;
+            padding-bottom: 650px;
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            font-size: 70px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        @media (max-width: 500px) {
+            .heading {
+                font-size: 24px;
+            }
+
+            header {
+                background: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+    </header>
+    <audio id="player" autoplay controls>
+        <source src="Song1.mp3" type="audio/mp3"></audio>
+    <h1>My Goals for CMSC389K</h1>
+    <h2>I hope to do well in the class and to have a lot of fun!</h2>
+</body>
+
+</html>

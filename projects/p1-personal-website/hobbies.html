@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <style>
+        header {
+            background: url(BackgroundGif.gif);
+            background-size: cover;
+            padding-bottom: 500px;
+            text-align: center;
+        }
+
+        #title {
+            padding-top: 5px;
+            font-size: 60px;
+            color: skyblue
+        }
+
+        .divHobbies {
+            display: block;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .hobbyPic {
+            width: 450px;
+            height: 300px;
+            float: left;
+            margin-right: 25px;
+            margin-left: 25px
+        }
+
+        #hobbyDisplay {
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            .heading {
+                font-size: 24px;
+
+            }
+
+            header {
+                background: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <article>
+        <h1 id="title"><i>My Hobbies</i></h1>
+        <ul>
+            <li>
+                <h2>Anime</h2>
+            </li>
+            <li>
+                <h2>Manga</h2>
+            </li>
+            <li>
+                <h2>Running</h2>
+            </li>
+        </ul>
+        <div id=hobbyDisplay>
+            <div class="divHobbies">
+                <img class="hobbyPic" src="DemonSlayer.jpg">
+            </div>
+
+            <div class="divHobbies">
+                <img class="hobbyPic" src="Manga.jpg">
+            </div>
+            <div class="divHobbies">
+                <img class="hobbyPic" src="Running.jpg">
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
